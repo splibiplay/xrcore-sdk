@@ -1,8 +1,0 @@
-cepillo
-pasta
-vaso
-plato
-servilleta
-cuchara
-cuchillo
-tenedor

@@ -1,43 +1,40 @@
 # XRCore SDK
 
-Framework modular para Unity orientado a **XR + AI Agents**.
+Framework para **agents en spatial computing (XR + AI)**.
 
-## Instalacion del SDK (UPM por Git)
+## Instalacion (Unity Package Manager)
 
-Este repositorio expone el paquete en `Assets/XRCore`.
+Este repo publica el SDK en `Assets/XRCore`.
 
-En cualquier proyecto Unity:
-
-1. Abre `Window -> Package Manager`
-2. Pulsa `+ -> Add package from git URL...`
-3. Pega:
+En Unity:
+1. `Window -> Package Manager`
+2. `+ -> Add package from git URL...`
+3. URL:
 
 `https://github.com/<usuario>/<repo>.git?path=/Assets/XRCore`
 
-> Ejemplo: `https://github.com/acme/xrcore-sdk.git?path=/Assets/XRCore`
+## Estructura del repo
 
-## Contenido principal
+- `Assets/XRCore` -> SDK instalable (`com.xrcore.sdk`)
+- `Assets/DemoScene/Demo_XR_Assistant.unity` -> escena demo principal
+- `Assets/Scripts/Demo` -> scripts demo
+- `media/` -> video/gif para mostrar el resultado
 
-- `Assets/XRCore`: paquete UPM (`com.xrcore.sdk`)
-- `Assets/XRCoreSamples`: escenas de demo y utilidades de ejemplo
-- `Assets/XRCoreInternal`: backlog y notas internas de migracion
+## Qué incluye XRCore
 
-## Features clave del SDK
+- Event Bus desacoplado
+- Task Runner
+- Agent + Behaviours + Reasoners (`IXRAgentReasoner`)
+- Vision Providers (`IXRDetectionProvider`)
+- Installer y Setup Wizard de editor
+- Capa UI/audio para instrucciones
 
-- Arquitectura modular (`Core`, `Interaction`, `Tasks`, `Vision`, `Agents`, `UI`)
-- `XRCoreEventBus` desacoplado y optimizado para bajo GC
-- Providers de vision intercambiables (`IXRDetectionProvider`)
-- Reasoners de agente intercambiables (`IXRAgentReasoner`)
-- Setup de escena en 1 click:
-  - `GameObject -> XRCore -> Setup XR Assistant`
-  - `Tools -> XRCore -> Setup Wizard`
+## Demo visual
 
-## Publicar en GitHub
+Coloca tu demo en:
+- `media/demo.mp4`
+- `media/demo.gif`
 
-1. Inicializa el repo Git (si aun no existe)
-2. Commit de todo el proyecto
-3. Crea repo remoto en GitHub
-4. Push a `main`
-5. Usa el URL UPM anterior para instalar
+Y referencia en este README:
 
-Si quieres, en el siguiente paso te ejecuto yo los comandos (`git init`, commit, crear remoto con `gh`, push).
+`![Demo](media/demo.gif)`
