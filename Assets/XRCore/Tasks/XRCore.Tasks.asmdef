@@ -1,0 +1,16 @@
+{
+  "name": "XRCore.Tasks",
+  "rootNamespace": "XRCore.Tasks",
+  "references": [
+    "XRCore.Core"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

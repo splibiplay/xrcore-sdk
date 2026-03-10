@@ -1,0 +1,21 @@
+{
+  "name": "com.xrcore.sdk",
+  "displayName": "XRCore SDK",
+  "version": "0.1.0",
+  "unity": "6000.3",
+  "description": "Modular XR + AI framework for Unity with Event Bus, Tasks, Vision providers, and Agent reasoners.",
+  "keywords": [
+    "xr",
+    "ai",
+    "agents",
+    "vision",
+    "sdk"
+  ],
+  "dependencies": {
+    "com.unity.ugui": "2.0.0"
+  },
+  "author": {
+    "name": "XRCore",
+    "url": "https://github.com/CHANGE-ME"
+  }
+}

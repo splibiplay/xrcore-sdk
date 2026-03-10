@@ -1,0 +1,16 @@
+{
+  "name": "XRCore.Interaction",
+  "rootNamespace": "XRCore.Interaction",
+  "references": [
+    "XRCore.Core"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
