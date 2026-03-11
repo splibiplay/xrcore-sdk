@@ -1,17 +1,45 @@
 # XRCore — AI Agent Framework for Unity XR
 
+![Unity](https://img.shields.io/badge/Unity-2022%2B%20%7C%20Unity%206-black)
+![XR](https://img.shields.io/badge/XR-Framework-blue)
+![AI](https://img.shields.io/badge/AI-Agent%20Architecture-purple)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 XRCore is a modular framework for building **spatial AI agents** in Unity XR applications.
 
-It provides an **event-driven architecture** that connects perception, reasoning, and interaction, enabling developers to build intelligent XR assistants, task guidance systems, and context-aware behaviours inside immersive environments.
+It provides an **event-driven architecture** that connects perception, reasoning, and interaction, enabling developers to create intelligent XR assistants, guided experiences, and context-aware behaviours inside immersive environments.
 
 ---
-## Demo
+
+# Demo
 
 [![XRCore Demo](https://img.youtube.com/vi/glK53YQSdys/maxresdefault.jpg)](https://youtu.be/glK53YQSdys)
 
+This demo shows a simple XR interaction flow where:
+
+1. The user looks at an object  
+2. A perception event is generated  
+3. The XR agent processes the event  
+4. The agent triggers instructions and behaviour in the scene  
+
 ---
 
-## Features
+# Why XRCore
+
+Building intelligent behaviour in XR often requires connecting multiple systems:
+
+- perception
+- interaction
+- reasoning
+- behaviour execution
+
+Most XR projects implement these systems separately, which leads to tightly coupled and difficult-to-extend architectures.
+
+XRCore provides a **clean modular architecture** where these systems communicate through an **event-driven pipeline**, making it easier to build scalable XR assistants and intelligent interaction systems.
+
+---
+
+# Features
 
 - Modular architecture for XR AI agents
 - Event-driven perception pipeline
@@ -20,10 +48,11 @@ It provides an **event-driven architecture** that connects perception, reasoning
 - Lightweight runtime suitable for XR
 - Scene setup automation tools
 - Demo XR Assistant included
+- Easily extensible architecture
 
 ---
 
-## Architecture Overview
+# Architecture Overview
 
 XRCore is organized around four main layers:
 
@@ -37,27 +66,29 @@ Agent Reasoning
 Behaviour Execution
 ```
 
-### 1. Perception Layer
+---
+
+## 1. Perception Layer
 
 Detection providers generate structured perception events.
 
-Examples:
+Examples include:
 
-- RaycastDetectionProvider
-- SimulationDetectionProvider
-- SentisDetectionProvider
-- VisionApiDetectionProvider
+- RaycastDetectionProvider  
+- SimulationDetectionProvider  
+- SentisDetectionProvider  
+- VisionApiDetectionProvider  
 
 These providers can represent:
 
-- simple interaction detection
-- simulated perception
-- computer vision
-- external AI APIs
+- simple interaction detection  
+- simulated perception  
+- computer vision models  
+- external AI APIs  
 
 ---
 
-### 2. Event System
+## 2. Event System
 
 XRCore uses a central event bus architecture.
 
@@ -75,11 +106,11 @@ task.step.changed
 agent.instruction
 ```
 
-This architecture decouples perception systems from agent logic.
+This decouples perception systems from agent logic.
 
 ---
 
-### 3. Agent Layer
+## 3. Agent Layer
 
 The core agent system is:
 
@@ -100,7 +131,7 @@ This allows XRCore to support both deterministic systems and AI-driven reasoning
 
 ---
 
-### 4. Behaviour Layer
+## 4. Behaviour Layer
 
 Agent decisions trigger XR behaviours such as:
 
@@ -109,28 +140,11 @@ Agent decisions trigger XR behaviours such as:
 - task progression
 - environment interaction
 
-This enables the creation of spatial AI assistants.
+This enables the creation of **spatial AI assistants**.
 
 ---
 
-## Demo
-
-The Unity package includes a demo scene:
-
-```
-Assets/XRCore/Samples/Demo_XR_Assistant
-```
-
-Example interaction flow:
-
-1. User looks at an object
-2. Detection event is generated
-3. XR agent processes the event
-4. Agent provides instruction or behaviour
-
----
-
-## Installation
+# Installation
 
 XRCore is distributed through the **Unity Asset Store**.
 
@@ -146,9 +160,9 @@ Assets/XRCore/Samples/Demo_XR_Assistant
 
 ---
 
-## Package Contents
+# Package Contents
 
-The package includes:
+The Unity package includes:
 
 - XRGuideAgent
 - XRTaskRunner
@@ -159,7 +173,25 @@ The package includes:
 
 ---
 
-## Use Cases
+# Example Interaction Flow
+
+```
+User looks at object
+        ↓
+Detection event generated
+        ↓
+XRCoreEventBus publishes event
+        ↓
+XRGuideAgent receives event
+        ↓
+Reasoner decides behaviour
+        ↓
+Instruction / behaviour executed
+```
+
+---
+
+# Use Cases
 
 XRCore can be used for:
 
@@ -167,11 +199,12 @@ XRCore can be used for:
 - spatial AI assistants
 - interactive XR guidance systems
 - intelligent museum experiences
-- experimental spatial AI research
+- context-aware XR workflows
+- spatial computing research
 
 ---
 
-## Requirements
+# Requirements
 
 - Unity 2022+ or Unity 6
 - Compatible with Built-in, URP and HDRP pipelines
@@ -179,9 +212,9 @@ XRCore can be used for:
 
 ---
 
-## Documentation
+# Documentation
 
-Architecture documentation can be found in:
+Architecture documentation is available in:
 
 ```
 docs/architecture.md
@@ -189,7 +222,20 @@ docs/architecture.md
 
 ---
 
-## License
+# Topics
+
+unity  
+xr  
+ai-agents  
+spatial-computing  
+unity-xr  
+computer-vision  
+event-driven  
+xr-development  
+
+---
+
+# License
 
 MIT License
 
