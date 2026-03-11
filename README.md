@@ -5,6 +5,11 @@ XRCore is a modular framework for building **spatial AI agents** in Unity XR app
 It provides an **event-driven architecture** that connects perception, reasoning, and interaction, enabling developers to build intelligent XR assistants, task guidance systems, and context-aware behaviours inside immersive environments.
 
 ---
+## Demo
+
+[![XRCore Demo](https://img.youtube.com/vi/glK53YQSdys/maxresdefault.jpg)](https://youtu.be/glK53YQSdys)
+
+---
 
 ## Features
 
