@@ -1,9 +1,6 @@
 # XRCore — AI Agent Framework for Unity XR
 
-![Unity](https://img.shields.io/badge/Unity-2022%2B%20%7C%20Unity%206-black)
-![XR](https://img.shields.io/badge/XR-Framework-blue)
-![AI](https://img.shields.io/badge/AI-Agent%20Architecture-purple)
-![License](https://img.shields.io/badge/license-MIT-green)
+[![Unity](https://img.shields.io/badge/Unity-2022%2B%20%7C%20Unity%206-black)](https://unity.com/) [![XR](https://img.shields.io/badge/XR-Framework-blue)](#) [![AI](https://img.shields.io/badge/AI-Agent%20Architecture-purple)](#) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 XRCore is a modular framework for building **spatial AI agents** in Unity XR applications.
 
@@ -11,20 +8,20 @@ It provides an **event-driven architecture** that connects perception, reasoning
 
 ---
 
-# Demo
+## Demo
 
-[![XRCore Demo](https://img.youtube.com/vi/glK53YQSdys/maxresdefault.jpg)](https://youtu.be/glK53YQSdys)
+[▶ XRCore Demo (video)](https://github.com/splibiplay/xrcore-sdk/raw/main/XRCore_Demo.mp4)
 
 This demo shows a simple XR interaction flow where:
 
-1. The user looks at an object  
-2. A perception event is generated  
-3. The XR agent processes the event  
-4. The agent triggers instructions and behaviour in the scene  
+1. The user looks at an object
+2. A perception event is generated
+3. The XR agent processes the event
+4. The agent triggers instructions and behaviour in the scene
 
 ---
 
-# Why XRCore
+## Why XRCore
 
 Building intelligent behaviour in XR often requires connecting multiple systems:
 
@@ -39,7 +36,7 @@ XRCore provides a **clean modular architecture** where these systems communicate
 
 ---
 
-# Features
+## Features
 
 - Modular architecture for XR AI agents
 - Event-driven perception pipeline
@@ -52,11 +49,11 @@ XRCore provides a **clean modular architecture** where these systems communicate
 
 ---
 
-# Architecture Overview
+## Architecture Overview
 
 XRCore is organized around four main layers:
 
-```
+```text
 Perception Layer
         ↓
 Event System
@@ -74,17 +71,17 @@ Detection providers generate structured perception events.
 
 Examples include:
 
-- RaycastDetectionProvider  
-- SimulationDetectionProvider  
-- SentisDetectionProvider  
-- VisionApiDetectionProvider  
+- RaycastDetectionProvider
+- SimulationDetectionProvider
+- SentisDetectionProvider
+- VisionApiDetectionProvider
 
 These providers can represent:
 
-- simple interaction detection  
-- simulated perception  
-- computer vision models  
-- external AI APIs  
+- simple interaction detection
+- simulated perception
+- computer vision models
+- external AI APIs
 
 ---
 
@@ -92,7 +89,7 @@ These providers can represent:
 
 XRCore uses a central event bus architecture.
 
-```
+```text
 XRCoreEventBus
 ```
 
@@ -100,7 +97,7 @@ Events such as detections or interactions are published and consumed by differen
 
 Example events:
 
-```
+```text
 vision.detect.object
 task.step.changed
 agent.instruction
@@ -114,7 +111,7 @@ This decouples perception systems from agent logic.
 
 The core agent system is:
 
-```
+```text
 XRGuideAgent
 ```
 
@@ -144,7 +141,19 @@ This enables the creation of **spatial AI assistants**.
 
 ---
 
-# Installation
+## Modules & Toolkits built on XRCore
+
+To keep XRCore focused on the core agent architecture, higher-level experiences are implemented as **separate toolkits** that plug into this framework.
+
+- **XRCore Training Toolkit** — Guided Training Layer for Unity XR
+  - Repository: https://github.com/splibiplay/xrcore-training-toolkit
+  - Adds training scenarios, steps, validators and user feedback (UI / highlight / audio) on top of XRCore, ideal for industrial and onboarding training flows.
+
+(As more toolkits are created, they can be listed here with links and short descriptions.)
+
+---
+
+## Installation
 
 XRCore is distributed through the **Unity Asset Store**.
 
@@ -152,15 +161,16 @@ After importing the package:
 
 1. Open the demo scene:
 
-```
+```text
 Assets/XRCore/Samples/Demo_XR_Assistant
+
 ```
 
 2. Press **Play** to test the interaction.
 
 ---
 
-# Package Contents
+## Package Contents
 
 The Unity package includes:
 
@@ -173,9 +183,9 @@ The Unity package includes:
 
 ---
 
-# Example Interaction Flow
+## Example Interaction Flow
 
-```
+```text
 User looks at object
         ↓
 Detection event generated
@@ -191,7 +201,7 @@ Instruction / behaviour executed
 
 ---
 
-# Use Cases
+## Use Cases
 
 XRCore can be used for:
 
@@ -204,7 +214,7 @@ XRCore can be used for:
 
 ---
 
-# Requirements
+## Requirements
 
 - Unity 2022+ or Unity 6
 - Compatible with Built-in, URP and HDRP pipelines
@@ -212,17 +222,17 @@ XRCore can be used for:
 
 ---
 
-# Documentation
+## Documentation
 
 Architecture documentation is available in:
 
-```
+```text
 docs/architecture.md
 ```
 
 ---
 
-# Topics
+## Topics
 
 unity  
 xr  
@@ -231,11 +241,11 @@ spatial-computing
 unity-xr  
 computer-vision  
 event-driven  
-xr-development  
+xr-development
 
 ---
 
-# License
+## License
 
 MIT License
 
