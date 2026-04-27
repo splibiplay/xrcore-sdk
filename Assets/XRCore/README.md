@@ -1,48 +1,78 @@
 # XRCore SDK (`com.xrcore.sdk`)
 
-Framework modular de XR + AI para Unity.
+Modular framework for **agents in spatial computing (XR + AI)**.
 
-## Instalacion por Git URL (UPM)
+## Asset Store oriented structure
 
-1. Publica este repositorio en GitHub.
-2. En tu proyecto Unity: `Window -> Package Manager -> + -> Add package from git URL...`
-3. Usa esta URL (cambia usuario/repositorio):
+- `Runtime/`
+  - `Agents`
+  - `Vision`
+  - `Tasks`
+  - `Interaction`
+  - `Core`
+  - `UI`
+- `Editor/`
+  - `SetupWizard`
+  - `AgentTools`
+- `Providers/`
+  - `RaycastDetectionProvider`
+  - `SentisDetectionProvider`
+  - `VisionApiDetectionProvider`
+  - `SimulationDetectionProvider`
+- `Samples/Demo_XR_Assistant/`
+- `Documentation/`
+  - `QuickStart.md`
+  - `Architecture.md`
+  - `AssetStore_Submission.md`
+  - `AssetStore_Listing.md`
+- `XRCore.asmdef`
+- `package.json`
 
-`https://github.com/<usuario>/<repo>.git?path=/Assets/XRCore`
+## Fast setup
 
-## Modulos
-
-- `Core`: settings, debug, versionado, event bus.
-- `Interaction`: emision de senales.
-- `Tasks`: flujo paso a paso y eventos de ciclo de vida.
-- `Vision`: contratos/providers de deteccion y publicacion de eventos.
-- `Agents`: behaviours y reasoners intercambiables.
-- `UI`: presentacion de instrucciones, audio y diagnostico.
-
-## Setup rapido en escena
-
+- `Tools -> XRCore -> Setup Wizard`
 - `GameObject -> XRCore -> Setup XR Assistant`
-- `Tools -> XRCore -> Setup Wizard` (con presets de Provider y Reasoner)
+- `Tools -> XRCore -> Setup Wizard -> Apply Demo Preset -> Beginner/Strict/Fast`
+- In sample bridge inspector: `Instruction Routing` -> `Use Agent Only` / `Use Bridge Fallback`
 
-## Reasoners soportados
+## Core contracts
+
+- `IXRDetectionProvider` for interchangeable providers.
+- `IXRAgentReasoner` for interchangeable agent brains.
+
+## Included reasoners
 
 - `RuleEngineReasoner`
 - `StateMachineReasoner`
 - `LocalLlmReasoner`
 - `ApiLlmReasoner`
 
-Contrato: `IXRAgentReasoner`.
+## Sample demo flow
 
-## Providers de Vision soportados
+Scene: `Assets/XRCore/Samples/Demo_XR_Assistant/Demo_XR_Assistant.unity`
 
-- `RaycastDetectionProvider`
-- `SimulationDetectionProvider`
-- `SentisDetectionProvider`
-- `VisionApiDetectionProvider`
+The sample includes a deterministic loop:
 
-Contrato: `IXRDetectionProvider`.
+1. `Look at the cube.`
+2. Look at `Cube_A`.
+3. `You are looking at the cube. Look away.`
+4. Look away to reset loop and repeat.
 
-## Notas
+## Value Proof In 2 Minutes
 
-- Los ejemplos/demo viven fuera del paquete principal, en `Assets/XRCoreSamples`.
-- Si vas a publicar a terceros, actualiza `package.json` (`author.url`) y licencia del repositorio.
+1. Open the sample scene and press Play.
+2. Verify the task advances when looking at `Cube_A`.
+3. Change one signal label in `Demo_VisionTask` and `VisionDetectionToSignalBridge`.
+4. Press Play again and confirm the same runtime pipeline still works.
+
+This demonstrates that detection source, reasoning strategy, and task logic can be changed without rewriting scene logic.
+
+## Platform and Pipeline Notes
+
+- Designed for Unity 6 (`6000.3`).
+- Works with Built-in, URP, and HDRP as long as scene materials/camera are configured.
+- Works with desktop and XR targets through interchangeable providers (raycast/simulation/sentis/API).
+
+## Installation via Git URL (UPM)
+
+`https://github.com/splibiplay/xrcore-sdk.git?path=/Assets/XRCore`

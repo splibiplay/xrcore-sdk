@@ -1,40 +1,42 @@
 # XRCore SDK
 
-Framework para **agents en spatial computing (XR + AI)**.
+Framework for **agents in spatial computing (XR + AI)**.
 
-## Instalacion (Unity Package Manager)
+## Installation (Unity Package Manager)
 
-Este repo publica el SDK en `Assets/XRCore`.
+This repo publishes the SDK in `Assets/XRCore`.
 
-En Unity:
+In Unity:
 1. `Window -> Package Manager`
 2. `+ -> Add package from git URL...`
 3. URL:
 
-`https://github.com/<usuario>/<repo>.git?path=/Assets/XRCore`
+`https://github.com/splibiplay/xrcore-sdk.git?path=/Assets/XRCore`
 
-## Estructura del repo
+## Repository structure
 
-- `Assets/XRCore` -> SDK instalable (`com.xrcore.sdk`)
-- `Assets/DemoScene/Demo_XR_Assistant.unity` -> escena demo principal
-- `Assets/Scripts/Demo` -> scripts demo
-- `media/` -> video/gif para mostrar el resultado
+- `Assets/XRCore` -> installable SDK (`com.xrcore.sdk`)
+- `Assets/XRCore/Samples/Demo_XR_Assistant` -> demo scene + scripts + prefabs + audio
+- `media/` -> video/gif to showcase the result
 
-## Qué incluye XRCore
+## What XRCore includes
 
-- Event Bus desacoplado
+- Decoupled Event Bus
 - Task Runner
 - Agent + Behaviours + Reasoners (`IXRAgentReasoner`)
 - Vision Providers (`IXRDetectionProvider`)
-- Installer y Setup Wizard de editor
-- Capa UI/audio para instrucciones
+- Editor installer and setup wizard
+- Setup wizard presets (`Beginner` / `Strict` / `Fast`)
+- UI/audio layer for instructions
+- Functional demo at `Assets/XRCore/Samples/Demo_XR_Assistant`
+- Publishing documentation at `Assets/XRCore/Documentation/AssetStore_Submission.md`
 
-## Demo visual
+## Visual demo
 
-Coloca tu demo en:
+Place your demo in:
 - `media/demo.mp4`
 - `media/demo.gif`
 
-Y referencia en este README:
+And reference it in this README:
 
 `![Demo](media/demo.gif)`
