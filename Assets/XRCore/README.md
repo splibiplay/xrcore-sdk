@@ -1,8 +1,9 @@
 # XRCore SDK (`com.xrcore.sdk`)
 
-Modular framework for **agents in spatial computing (XR + AI)**.
+XRCore is a modular framework for spatial AI agents in Unity XR.
+This package contains the reusable runtime, provider layer, setup tooling, and sample content for the XRCore SDK.
 
-## Asset Store oriented structure
+## Package layout
 
 - `Runtime/`
   - `Agents`
@@ -16,9 +17,9 @@ Modular framework for **agents in spatial computing (XR + AI)**.
   - `AgentTools`
 - `Providers/`
   - `RaycastDetectionProvider`
+  - `SimulationDetectionProvider`
   - `SentisDetectionProvider`
   - `VisionApiDetectionProvider`
-  - `SimulationDetectionProvider`
 - `Samples/Demo_XR_Assistant/`
 - `Documentation/`
   - `QuickStart.md`
@@ -33,12 +34,12 @@ Modular framework for **agents in spatial computing (XR + AI)**.
 - `Tools -> XRCore -> Setup Wizard`
 - `GameObject -> XRCore -> Setup XR Assistant`
 - `Tools -> XRCore -> Setup Wizard -> Apply Demo Preset -> Beginner/Strict/Fast`
-- In sample bridge inspector: `Instruction Routing` -> `Use Agent Only` / `Use Bridge Fallback`
+- In sample bridge inspector: `Instruction Routing -> Use Agent Only` or `Use Bridge Fallback`
 
-## Core contracts
+## Stable extension contracts
 
-- `IXRDetectionProvider` for interchangeable providers.
-- `IXRAgentReasoner` for interchangeable agent brains.
+- `IXRDetectionProvider` for interchangeable perception sources.
+- `IXRAgentReasoner` for interchangeable reasoning backends.
 
 ## Included reasoners
 
@@ -47,32 +48,32 @@ Modular framework for **agents in spatial computing (XR + AI)**.
 - `LocalLlmReasoner`
 - `ApiLlmReasoner`
 
-## Sample demo flow
+## Sample demo loop
 
 Scene: `Assets/XRCore/Samples/Demo_XR_Assistant/Demo_XR_Assistant.unity`
 
-The sample includes a deterministic loop:
+Default deterministic loop:
 
 1. `Look at the cube.`
-2. Look at `Cube_A`.
+2. User focuses `Cube_A`.
 3. `You are looking at the cube. Look away.`
-4. Look away to reset loop and repeat.
+4. User looks away and the loop resets.
 
-## Value Proof In 2 Minutes
+## Value proof in 2 minutes
 
 1. Open the sample scene and press Play.
-2. Verify the task advances when looking at `Cube_A`.
-3. Change one signal label in `Demo_VisionTask` and `VisionDetectionToSignalBridge`.
-4. Press Play again and confirm the same runtime pipeline still works.
+2. Confirm step progression while focusing `Cube_A`.
+3. Change one signal label in demo assets.
+4. Press Play again and verify the pipeline still works.
 
-This demonstrates that detection source, reasoning strategy, and task logic can be changed without rewriting scene logic.
+This demonstrates modularity: perception, reasoner strategy, and task logic remain decoupled.
 
-## Platform and Pipeline Notes
+## Platform notes
 
-- Designed for Unity 6 (`6000.3`).
-- Works with Built-in, URP, and HDRP as long as scene materials/camera are configured.
-- Works with desktop and XR targets through interchangeable providers (raycast/simulation/sentis/API).
+- Unity 2022+ and Unity 6 compatible.
+- Works with Built-in, URP, and HDRP (scene configuration dependent).
+- Supports desktop and XR targets through interchangeable providers.
 
-## Installation via Git URL (UPM)
+## Installation (UPM Git)
 
 `https://github.com/splibiplay/xrcore-sdk.git?path=/Assets/XRCore`

@@ -1,10 +1,17 @@
 # Media
 
-Coloca aqui los archivos de presentacion del SDK:
+Media files used by repository documentation are stored here.
+
+Current demo asset:
+
+- `../XRCore_Demo.mp4` (root-level demo video)
+
+Optional additional assets:
 
 - `demo.mp4`
 - `demo.gif`
 
-Ejemplo para el `README.md` raiz:
+README usage examples:
 
-`![Demo](media/demo.gif)`
+- Video link: `[XRCore Demo](../XRCore_Demo.mp4)`
+- GIF embed: `![Demo](media/demo.gif)`
