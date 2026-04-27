@@ -108,17 +108,11 @@ Higher-level products can be layered on XRCore while keeping the base framework 
 
 ## Installation
 
-XRCore can be distributed through the Unity Asset Store or imported via Git URL in UPM.
+XRCore SDK is distributed through the Unity Asset Store.
 
-UPM URL:
+This repository is documentation-focused and hosts product information, positioning, and demo media.
 
-`https://github.com/splibiplay/xrcore-sdk.git?path=/Assets/XRCore`
-
-Quick start:
-
-1. Open `Assets/XRCore/Samples/Demo_XR_Assistant/Demo_XR_Assistant.unity`
-2. Press Play
-3. Use `Tools -> XRCore -> Setup Wizard` for guided setup/presets
+To use XRCore in production projects, import the official package from the Asset Store.
 
 ## Package Contents
 
@@ -146,10 +140,9 @@ Quick start:
 
 ## Documentation
 
-- `Assets/XRCore/README.md`
-- `Assets/XRCore/Documentation/QuickStart.md`
-- `Assets/XRCore/Documentation/Architecture.md`
-- `Assets/XRCore/Documentation/AssetStore_Submission.md`
+- Product overview in this `README.md`
+- Demo video: `XRCore_Demo.mp4`
+- Related toolkit repository: [xrcore-training-toolkit](https://github.com/splibiplay/xrcore-training-toolkit)
 
 ## License
 
