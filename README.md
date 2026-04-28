@@ -1,12 +1,12 @@
-# XRCore — AI Agent Framework for Unity XR
+# XRCore SDK — Build Enterprise XR Assistants and Guided Workflows
 
 [![Unity](https://img.shields.io/badge/Unity-2022%2B%20%7C%20Unity%206-black)](https://unity.com/)
 [![XR](https://img.shields.io/badge/XR-Framework-blue)](#)
 [![AI](https://img.shields.io/badge/AI-Agent%20Architecture-purple)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-XRCore is a modular framework for building spatial AI agents in Unity XR.
-It connects perception, events, reasoning, and behaviour through a clean event-driven architecture so teams can build scalable XR assistants and guided workflows without hard coupling.
+XRCore SDK is the official foundation for building enterprise XR assistants and guided workflows in Unity XR.
+It connects perception, events, reasoning, and actions through a scalable event-driven architecture so teams can ship faster with reusable building blocks instead of custom one-off scene logic.
 
 ## Demo
 
@@ -32,7 +32,19 @@ XRCore separates responsibilities into reusable modules:
 - interchangeable reasoners,
 - behaviour output layer.
 
-This keeps projects extensible and lets you swap detection and reasoning strategies without rewriting the whole scene flow.
+This keeps projects extensible and lets teams scale from demos to production without rewriting the whole scene flow.
+
+## Start Here (Ecosystem Path)
+
+```text
+Start with XRCore SDK
+       ↓
+Add XRCore Training Toolkit
+       ↓
+Add XRCore Training Assessment
+       ↓
+Scale with Authoring + Voice + Vision
+```
 
 ## Core Features
 
