@@ -121,7 +121,7 @@ Higher-level products can be layered on XRCore while keeping the base framework 
 
 - SDK demo: [XRCore SDK Demo](https://github.com/splibiplay/xrcore-sdk/raw/main/XRCore_Demo.mp4)
 - Training Toolkit demo: _coming soon_
-- Training Assessment demo: _coming soon_
+- Training Assessment demo: [XRCore Training Assessment Demo](https://youtu.be/MpAfoV2tRJY)
 
 ## Installation
 
