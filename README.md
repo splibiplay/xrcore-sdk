@@ -122,11 +122,16 @@ Higher-level products can be layered on XRCore while keeping the base framework 
   - Repository: [xrcore-assessment](https://github.com/splibiplay/xrcore-assessment)
   - Adds scoring, pass/fail evaluation, and exportable training performance reports.
 
+- **XRCore Training Authoring**
+  - Repository: [xrcore-training-authoring](https://github.com/splibiplay/xrcore-training-authoring)
+  - Adds visual scenario authoring, generation workflows, and release-readiness gates.
+
 ## XRCore Ecosystem Links
 
 - XRCore SDK: [xrcore-sdk](https://github.com/splibiplay/xrcore-sdk)
 - XRCore Training Toolkit: [xrcore-training-toolkit](https://github.com/splibiplay/xrcore-training-toolkit)
 - XRCore Training Assessment: [xrcore-assessment](https://github.com/splibiplay/xrcore-assessment)
+- XRCore Training Authoring: [xrcore-training-authoring](https://github.com/splibiplay/xrcore-training-authoring)
 - Unity Asset Store publisher page: [SPL Publisher](https://assetstore.unity.com/publishers)
 
 ## Video Demos
