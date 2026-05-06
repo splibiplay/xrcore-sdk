@@ -1,9 +1,5 @@
 # XRCore SDK — Build Enterprise XR Assistants and Guided Workflows
 
-<p align="center">
-  <img src="./assets/spl-spatial-systems-banner.png" alt="SPL Spatial Systems Banner" />
-</p>
-
 [![Unity](https://img.shields.io/badge/Unity-2022%2B%20%7C%20Unity%206-black)](https://unity.com/)
 [![XR](https://img.shields.io/badge/XR-Framework-blue)](#)
 [![AI](https://img.shields.io/badge/AI-Agent%20Architecture-purple)](#)
