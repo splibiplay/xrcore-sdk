@@ -1,7 +1,7 @@
 # XRCore SDK — Build Enterprise XR Assistants and Guided Workflows
 
 <p align="center">
-  <img src="Social.pn](https://github.com/splibiplay/xrcore-sdk/blob/main/Social.png" alt="XR Core Banner" />
+  <img src="./assets/spl-spatial-systems-banner.png" alt="SPL Spatial Systems Banner" />
 </p>
 
 [![Unity](https://img.shields.io/badge/Unity-2022%2B%20%7C%20Unity%206-black)](https://unity.com/)
