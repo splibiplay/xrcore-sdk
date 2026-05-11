@@ -8,7 +8,7 @@
 
 The official foundation for XRCore products in Unity XR.
 
-XRCore SDK provides the runtime contract and event infrastructure used by Toolkit, Assessment, Authoring, Voice, VisionPlus, LLBridge, and Analytics.
+XRCore SDK provides the runtime contract and event infrastructure used by Context, Toolkit, Assessment, Authoring, Voice, VisionPlus, LLBridge, and Analytics.
 
 ## Value in 2 Minutes
 
@@ -32,6 +32,8 @@ Core runtime blocks:
 ```text
 XRCore SDK (base)
       ↓
+XRCore Context (infrastructure)
+      ↓
 Training Toolkit + Assessment + Authoring
       ↓
 Voice + VisionPlus + LLBridge
@@ -42,6 +44,7 @@ Analytics
 ## Related XRCore Modules
 
 - Hub: [splibiplay](https://github.com/splibiplay/splibiplay)
+- Context: [xrcore-context](https://github.com/splibiplay/xrcore-context)
 - Training Toolkit: [xrcore-training-toolkit](https://github.com/splibiplay/xrcore-training-toolkit)
 - Training Assessment: [xrcore-assessment](https://github.com/splibiplay/xrcore-assessment)
 - Training Authoring: [xrcore-training-authoring](https://github.com/splibiplay/xrcore-training-authoring)
