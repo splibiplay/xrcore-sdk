@@ -4,9 +4,14 @@
 [![Package](https://img.shields.io/badge/Package-Foundation%20SDK-2563eb)](#)
 [![Architecture](https://img.shields.io/badge/Architecture-Event--Driven-0ea5e9)](#)
 [![Ecosystem](https://img.shields.io/badge/Ecosystem-XRCore%20Modules-7a3cff)](https://github.com/splibiplay/splibiplay)
+[![Unity Asset Store](https://img.shields.io/badge/Unity%20Asset%20Store-XRCore-f59e0b)](https://assetstore.unity.com/packages/tools/ai-ml-integration/xrcore-event-driven-ai-framework-for-unity-xr-366852)
 [![License](https://img.shields.io/badge/License-MIT-22c55e)](LICENSE)
 
 The official foundation for XRCore products in Unity XR.
+
+## Unity Asset Store
+
+Published package: [XRCore – Event-Driven AI Framework for Unity XR](https://assetstore.unity.com/packages/tools/ai-ml-integration/xrcore-event-driven-ai-framework-for-unity-xr-366852)
 
 XRCore SDK provides the runtime contract and event infrastructure used by Context, Toolkit, Assessment, Authoring, Voice, VisionPlus, LLBridge, and Analytics.
 
