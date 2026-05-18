@@ -61,6 +61,8 @@ Analytics
 [![xrcore-visionplus](https://img.shields.io/badge/GitHub-vision--plus-0f766e?style=flat-square)](https://github.com/splibiplay/xrcore-visionplus)
 [![xrcore-llbridge](https://img.shields.io/badge/GitHub-llbridge-4f46e5?style=flat-square)](https://github.com/splibiplay/xrcore-llbridge)
 [![xrcore-analytics](https://img.shields.io/badge/GitHub-analytics-d97706?style=flat-square)](https://github.com/splibiplay/xrcore-analytics)
+[![xrcore-ai](https://img.shields.io/badge/GitHub-xrcore--ai-9333ea?style=flat-square)](https://github.com/splibiplay/xrcore-ai)
+[![xrcore-ai-mcp](https://img.shields.io/badge/GitHub-xrcore--ai--mcp-7c3aed?style=flat-square)](https://github.com/splibiplay/xrcore-ai-mcp)
 
 *Click a badge to open the GitHub repository or the Unity Asset Store listing.*
 
